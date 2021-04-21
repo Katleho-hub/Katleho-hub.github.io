@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name=" viewport" content="width=devic-width, initial-scale=1" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Gallery</title>
+    <style >
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    height: 100%;
+}
+body{
+    
+    margin-bottom: 10em;
+}
+section{
+    margin-top: 14em;
+}
+.logo img {
+    margin-left: 4em;
+    margin-top: -12em;
+    float: left;
+    width: 130px;
+    height: auto;
+}
+.logo img:hover {
+    -webkit-transform:none;
+}
+.main-nav{
+    margin-top: -12em;
+    float:right;
+    list-style:none;
+    padding: 10px;
+}
+.main-nav li{
+    display : inline-grid;
+}
+.main-nav li a{
+    color :black;
+    text-decoration : none;
+    text-transform:uppercase;
+    padding : 20px;
+    font-family:'Times New Roman', Times, serif ;
+    font-size:20px;
+}
+.main-nav li a:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.3s ease-in;
+} 
+.main-nav li.active a {
+   background-color: black;
+    color: white ;
+    border: 3px ridge white;
+} 
+.main-nav li a:hover {            
+    background-color: black;           
+    color: whitesmoke;            
+    transition: 0.3s ease-in;            
+}
+
+header {
+    box-sizing: border-box;
+    width: 94%;    
+    margin: 10em 43px 43px 43px;
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);
+}
+
+.heading {
+    box-sizing: border-box;
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);
+    background-image: url(2.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: initial;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8em;
+    border: 1em ghostwhite;
+    color: white;
+   margin-bottom: 1em;
+   margin-left: .5em;
+   margin-top : 1em;
+    padding: .1em;
+    width:94%;
+}
+.gallery {
+    margin-top:-2em;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.gallery__item {
+    background-color:lightgray;    
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    box-sizing : border-box ;
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);    
+    background-size:auto;
+}
+.gallery__image {    
+    height:auto ;
+    width: 100%;
+    display: block; 
+    filter: grayscale(100%);
+}
+img:hover {   
+    -webkit-transform: scale(2) rotate(90deg);
+    border: 4px transparent;
+    transition: ease-out 3s;
+    filter: grayscale(0%);
+   
+}
+.gallery__item:hover{
+    /*Brings img being hover*/
+    z-index:10;
+}
+@media only screen and (min-width: 33.75em){
+    .gallery__item {
+        flex-basis: calc(50% - 2rem);
+    }
+}
+@media only screen and (min-width: 48em){
+    .gallery__item{
+        flex-basis: calc((100%/3) - 2rem);
+
+    }
+}
+@media only screen and (min-width:60em){
+    .gallery__item{
+        flex-basis: calc((100%/4) - 2rem);
+    }
+}
+
+/*end gallery editing*/
+
+/*new*/
+.back-to-top{
+    display:block;
+    position:fixed ;  
+    bottom:20px;
+    right:7px;
+        
+    background-size:3.5em;   
+    color:gray ;
+
+    margin-top:-3em;    
+    font-size: 3em;
+}
+.back-to-top:hover {
+    color:orangered ;
+}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="row">
+            <div class="logo">
+                <a href=" ndex.html"><img src="3.png " /></a>
+            </div>
+            <ul class=" main-nav">
+                <li class="active"><a href="# ">gallery</a></li>
+                <li><a href="index.html ">home</a></li>
+                <li><a href="About.html ">about</a></li>
+                <li><a href="Social.html ">social</a></li>
+                <li><a href="contact.html ">contact</a></li>
+            </ul>
+        </div>
+    <h1 class="heading">GALLERY</h1>
+        </section>
+    <main class=" site-wrapper">
+        
+        <section class="gallery">
+
+
+            <!--individual card-->
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g2.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <!--individual card-->
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g3.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g4.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g5.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g6.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g7.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g8.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g9.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g10.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g11.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g12.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g13.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g14.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g15.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g16.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g17.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g18.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g19.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g20.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+            <figure class=" gallery__item ">
+                <img class="gallery__image" src=" g6.jpg" />
+                <figcaption class=" gallery__image-caption">
+                    sunrise
+                </figcaption>
+            </figure>
+
+        </section>
+    </main>
+   <div class="back_to_top ">
+        <a class="back-to-top" href="#">
+             <i class="fa fa-arrow-circle-up"></i>
+        </a>
+    </div>
+    
+</body>
+</html>

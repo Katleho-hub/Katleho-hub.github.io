@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />   
+    <title>Home</title>
+    <style >
+        * {
+    margin :0px;
+    padding :0px;
+}
+body{
+    background-image:url(2.jpeg) ;
+    background-position :center ;
+    background-size :cover;
+    height:100vh;
+}
+.logo img {
+    margin-left: 7em;
+    margin-top: 30px;
+    float: left;
+    width: 130px;
+    height: auto;
+}
+/*/ORIGINAL*/
+.main-nav{
+    margin-top: 30px;
+    float:right;
+    list-style:none;
+    padding: 10px;
+}
+.main-nav li{
+    display : inline-grid;
+}
+.main-nav li a{
+    color :black;
+    text-decoration : none;
+    text-transform:uppercase;
+    padding : 20px;
+    font-family:'Times New Roman', Times, serif ;
+    font-size:20px;
+}
+.main-nav li a:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.3s ease-in;
+}
+.main-nav li.active a {
+   background-color: black;
+    color: white ;
+    border: 3px ridge white;
+} 
+.main-grid{
+    margin-right :40px;
+     margin:200px 50px 0px 40px;
+     float: left;     
+}
+/*ORIGINAL END*/
+h1{
+    text-align :center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: white ;
+}
+.p1 {
+    text-align: center;
+    color: white;    
+    font-size: 40px;
+}
+.grid {
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);
+    display: grid;
+    /* colunm(div) width */
+    grid-template-columns: 100%; /* =grid-template-columns:1fr 1fr 1fr;*/
+    grid-gap: 1em;
+    /* grid-auto-rows for height*/
+    grid-auto-rows: minmax(200px ) auto;
+    /*minmax enable flexible column*/
+}
+ .grid div {
+       
+        background-image : url(1.jpg) ;
+        /* note units[ px , % , em ]*/
+        padding: 1em;       
+    } 
+.grid1 {
+    display: grid;
+    /* colunm(div) width */
+    grid-template-columns:23.62%; /* =grid-template-columns:1fr 1fr 1fr;*/
+    grid-gap: 1em;
+    /* grid-auto-rows for height*/
+    grid-auto-columns: minmax(200px) auto;
+    /*minmax enable flexible column*/
+    margin-TOP :2em;
+   
+}
+.grid1 div1 {
+     background-image: url(4.jpg) ;
+     /* note units[ px , % , em ]*/
+     padding: 1em;
+}
+.grid2 {
+    display: grid;
+    /* colunm(div) width */
+    grid-template-columns: 50% 23.62% 23.62%; /* =grid-template-columns:1fr 1fr 1fr;*/
+   grid-gap:1em;
+    /* grid-auto-rows for height*/
+    grid-auto-rows: minmax(100px) auto;
+    /*minmax enable flexible column*/  
+    margin-top: 2em;
+   
+}
+.grid2 div2 {
+    background-image : url(4.jpg) ;
+    /* note units[ px , % , em ]*/
+    padding: 1em;
+    color:white;
+   
+}
+.main-nav {
+    margin-top: 30px;
+    float: right;
+    list-style: none;
+    padding: 10px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header >
+        <div class="row">
+            <div class="logo">
+                <a href=" index.html"><img src="3.png " /></a>
+            </div>
+            <ul class=" main-nav">
+                <li class=" active"><a href="#">home</a></li>
+                <li><a href="About.html">about</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="Social.html ">social</a></li>
+                <li><a href="contact.html ">contact</a></li>
+            </ul>
+        </div> 
+        <div class=" main-grid">
+            
+            <div class=" grid">
+                <div>
+                 <h1>Motloung Inc.</h1>
+                </div>
+            </div>
+            <div1 class="grid1">
+                 <div1>
+                     <p class=" p1">WELCOME</p>
+                 </div1>
+            </div1>
+            <div class=" grid2">
+                <div2>
+                    Sanctus dolor dolor sedIriure dolor voluptua possim ipsum ipsum et invidunt
+                    et duo quod doming takimata quis feugiat euismod dolore lorem kasd sit sadipscing
+                    duo eirmod hendrerit at hendrerit iusto sit elitr est sed sed eos eos delenit lorem
+                    sadipscing facilisis ea elitr
+                </div2>
+                <div2>THINK LESS, LIVE MORE</div2>
+                <div2>TOO CLEVER IS DUMB</div2>
+                <div2>YOU ONLY LIVE ONCE</div2>
+                <div2>STOP DREAMING START DOING</div2>
+                <div2>DON'T WORRY BE HAPPY</div2>              
+               
+            </div>
+
+        </div>
+</header>
+
+</body>
+</html>

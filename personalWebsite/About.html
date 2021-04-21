@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />    
+    <!--w3 schools social media buttons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About</title>
+    <style>
+        *{   
+    margin:0;    
+    padding:0;
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html {
+    background-image: url();   
+    background-position: center;
+    background-size: cover;
+    height:200vh;
+   
+}
+.logo img {
+    margin-left:7em;
+    margin-top: 30px;
+    float: left;
+    width: 130px;
+    height: auto;
+}
+.main-nav{
+    margin-top: 30px;
+    float:right;
+    list-style:none;
+    padding: 10px;
+}
+.main-nav li{
+    display : inline-grid;
+}
+.main-nav li a{
+    color :black;
+    text-decoration : none;
+    text-transform:uppercase;
+    padding : 20px;
+    font-family:'Times New Roman', Times, serif ;
+    font-size:20px;
+}
+.main-nav li a:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.3s ease-in;
+}  
+.main-nav li.active a {
+   background-color: black;
+    color: white ;
+    border: 3px ridge white;
+} 
+.main-nav li a:hover {            
+    background-color:black;           
+    color:white;            
+    transition: 0.3s ease-in; }
+a{
+    text-decoration: none;
+    color: white;
+}
+sectiion{
+    float:left;   
+    padding:10rem 0;
+    background-color:white;
+}
+.contianer{
+    float:left;
+    margin-left: 5em;
+}
+.heading {
+    box-sizing: border-box;
+    box-shadow: 1px 2px 40px 2px rgba(160, 160, 160, .5);
+    background-image: url(2.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: initial;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8em;
+    border: 1em ghostwhite;
+    color: white;
+    margin: 1em 0;
+    padding: .5em;
+}
+.card-wrapper{
+    display:flex;    
+    flex-direction :column ;
+    align-items :center;
+}
+.card-wrapper  :hover{   
+    background-color: black;
+    color: white;
+}
+.card-wrapper:hover :not(:hover) {
+    opacity: .5;
+
+}
+.card-img :hover {
+    -webkit-transform: none;
+}
+.card{
+    /*6.25rem=100px*/
+    width: 32rem;
+    background-color:lightgray ;
+    display:flex ;
+    flex-direction:column ;
+    align-items :center ;
+    justify-content :center ;
+    margin: 2rem 0;
+    box-shadow : .5rem .5rem 3rem rgba(0,0,0,0.2);
+}
+.card .card-img {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    /*clip path from bennettfeely.com/clippy/ (cuts the image)*/
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+.profile-img{
+    -webkit-transform: rotate(90deg);
+    width:15rem;
+    height:15rem;
+    object-fit:cover ;
+    border-radius:50%;
+    margin-top : -17rem;
+    /*z-index brings image to the front(use z-index if flex-item )*/
+    z-index : 999;
+    border: 1rem solid lightgray;
+}
+.card h1{
+    font-size: 2.5rem;
+    color: black;
+    margin : 1.5rem 0;
+}
+.title{
+    color: gray;
+    font-size:1.5rem;
+    font-weight:300;
+}
+.text{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style :italic ;
+    text-align:center ;
+    color: black;
+}
+.card .btn{
+    padding :1rem 2.5rem;
+    background-color: cornflowerblue ;
+    border-radius :2rem;
+    margin :1rem 0;
+    text-transform:uppercase ;
+    color :whitesmoke ;
+    font-size : 1.4rem;
+    transition:all .5s;
+}
+.card  .btn:hover {
+    transform:translateY(-2px);
+    box-shadow: .5rem .5rem 2rem rgba(0,0,0,0.2);
+
+}
+.card  .btn:active {
+    transform:translateY(0);
+}
+.social-media{
+    width:100% ;
+    list-style :none;
+    display : flex ;
+    justify-content :space-around  ;
+    padding : 2rem 0;
+    margin-top : 1.5rem;
+    border-top : 1px solid rgba(0,0,0,0.1);
+}
+.social-media  i{
+    font-size : 1.5rem;
+    transition: color .5s;
+}
+.fa {
+    padding: 20px;    
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;   
+}
+.fa:hover {        
+    opacity: 0.75;
+ }
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-facebook {
+   background-color:blue;
+    color: white;
+}
+.fa-instagram {
+    background-image : url(3.jfif);
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-twitter:hover,
+.fa-facebook:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover{
+    color: hotpink;
+}
+/* responsiveness*/
+@media only screen and (min-width: 700px ) {
+    .card-wrapper {
+        flex-direction: row;
+        /*"wrap" drops content to next line when out of space*/
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin: 2rem;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+       .card:nth-child(1) {
+            animation: fadeIn .5s .5s backwards;
+        }
+    .card:nth-child(2) {
+        animation: fadeIn .5s 1s backwards;
+    }
+    .card:nth-child(3) {
+        animation: fadeIn .5s 1.5s backwards;
+    }
+    .card:nth-child(4) {
+        animation: fadeIn .5s 2s backwards;
+    }
+ }
+
+
+    </style>
+</head>
+<body> 
+    <section>
+        <div class="row">
+            <div class="logo">
+                <a href=" index.html"><img src="3.png " /></a>
+            </div>
+            <ul class=" main-nav">
+                <li class="active"><a href="# ">about</a></li>
+                <li ><a href="index.html ">home</a></li>
+                <li><a href="gallery.html ">gallery</a></li>
+                <li><a href="Social.html ">social</a></li>
+                <li><a href="contact.html ">contact</a></li>
+            </ul>
+        </div>
+        <div class="contianer">
+            <h1 class="heading">ABOUT ME</h1>
+            <div class="card-wrapper">
+                <!--individual card-->
+                <div class="card">
+                    <img src="a1.jpeg" alt="card background" class="card-img " />
+                    <img src="me.jpg" style="-webkit-transform:rotate(360deg);" alt="profile image" class="profile-img " />
+                    <h1>BACKGROUND</h1>
+                    <p class="title"></p>
+                    <p class="text">
+                        Katleho Freedom Motloung is a candidate programmer.<br /><br />
+                        Born on the 10th September 1996 on a warm springs day. <br /><br />
+                        He began his journey into programming on the  1st April 2019,
+                        after begin chosen from a candidate pool of 28 000 to take  part in
+                        the Dimension Data building 20 team.<br /><br />
+                    </p>
+                </div>               
+                <!--individual card-->
+                <div class="card">
+                    <img src="a1.jpeg" alt="card background" class="card-img " />
+                    <img src="me.jpg" style="-webkit-transform:rotate(360deg);" alt="profile image" class="profile-img " />
+                    <h1>HOBBIES</h1>
+                    <p class="title"></p>
+                    <p class="text">
+                        Mr Motloung is an avid  amateur cook, specialising in gourmet scrumbled eggs.<br /><br />
+                        He recently started taking an interset in photography. It all started when he bought a new phone.<br /><br />
+                        Board games(Chess,Ludo) he plays on a regular bases, he also loves the
+                        challege of solving all kinds of puzzles<br /><br />
+                    </p>
+                </div>
+
+
+                <!--individual card-->
+                <div class="card">
+                    <img src="a1.jpeg" alt="card background" class="card-img " />
+                    <img src="me.jpg" style="-webkit-transform:rotate(360deg);" alt="profile image" class="profile-img " />
+                    <h1>INTERESTS</h1>
+                    <p class="title"></p>
+                    <p class="text">
+                        Mr Motloung is mainly interested in increasing his value, through education/learning.
+                        He believes that knowledge gained from past  lessons can be often be used even in entirely
+                        different scenarios in the future.<br/><br/>
+                        He is very interested in networking as he realised, it aids in continuous learning by enabling an individual
+                        to gain access to wealth of knowledge by merely talking to other professionals in the industry.<br/><br/>
+                    </p>
+                </div>
+
+                <!--individual card-->
+                <div class="card">
+                    <img src="a1.jpeg" alt="card background" class="card-img " />
+                    <img src="me.jpg" style="-webkit-transform:rotate(360deg);" alt="profile image" class="profile-img " />
+                    <h1>GOALS</h1>
+                    <p class="title"></p>
+                    <p class="text">
+                        Mr Motloung goal for the current year(2019) is to master essential web development languages.<br/><br/>
+                         At the moment he  spends approximately 3hours a day practising and learning new programming skills.<br/><br/>
+                        He aims to be a creative and inspiring developer that is able to innovate and invent.<br/><br/>
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="a1.jpeg" alt="card background" class="card-img " />
+                    <img src="me.jpg" style="-webkit-transform:rotate(360deg);" alt="profile image" class="profile-img " />
+                    <h1>IN 10 YEARS</h1>
+                    <p class="title"></p>
+                    <p class="text">
+                        In 10 Years I would like to be a qualified senior developer,
+                        well learned in languages such as HTML, PHP, CSS, JAVASCRIPT, 
+                        ASP.NET and ANGULAR.JS.<br/><br/>
+
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
